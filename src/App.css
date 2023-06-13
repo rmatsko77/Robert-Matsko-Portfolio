@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+html {
+  font-family: 'Prompt', sans-serif;
+  background-color: #232931;
+  color: #EEEEEE;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  position: relative;
+  height: 88vh;
+  padding: 2rem;
+  margin: 2vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container::before, .container::after {
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  content: '';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container::before {
+  left: 0;
+  top: 0;
+  border-left: 4px solid #4ECCA3;
+  border-top: 4px solid #4ECCA3;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.container::after {
+  right: 0;
+  bottom: 0;
+  border-right: 4px solid #4ECCA3;
+  border-bottom: 4px solid #4ECCA3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name {
+  font-size: 4.5rem;
+  font-weight: 300;
+  letter-spacing: .075rem;
+  margin-bottom: 0;
+}
+
+.title {
+  font-weight: 100;
+  margin: 0 1.5rem;
+}
+
+.title-icon {
+  height: 1.1rem;
+}
+
+.location {
+  font-weight: 100;
+  margin: 0 1.5rem;
+  font-style: italic;
+  
+}
+
+.location-icon {
+  font-size: 1.5rem;
+  padding-top: 3px;
+}
+
+.socials {
+  position: relative;
+  left: 97%;
+  bottom: 25%;
+}
+
+.socials a {
+  font-size: 1.5rem;
+  padding: .1rem;
+  margin: 0.1rem 0;
+  color: rgba(255, 255, 255, .3);
+  transition: all .5s;
+  cursor: pointer;
+  display: block;
+  
+}
+
+.socials a:hover {
+  color: rgba(255, 255, 255, 1);
+  transform: scale(1.01);
+}
+
+nav {
+  position: absolute;
+  top: 35%;
+
+}
+
+nav ul li {
+  list-style-type: none;
+  position: relative;
+
+}
+
+#nav-icon {
+  position: relative;
+  font-size: 1.5rem;
+  top: .35rem;
+  transition: all .5s;
+}
+
+nav ul li:hover #nav-icon {
+  font-stretch: 2rem;
+  width: 3rem;
+
+}
+
+a.nav:link {
+  color: #EEEEEE;
+  text-decoration: none;
+}
+
+a.nav:visited {
+  color: #EEEEEE;
+}
+
+.about {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-size: 1.1rem;
+  width: 35%;
 }

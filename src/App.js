@@ -28,10 +28,10 @@ function App() {
       </div>
       <nav>
         <ul className='tabs' id='tabs'>
-          <li className='nav' onClick={setActive}><Link to='/about'><AiOutlineMinus id='nav-icon' />About</Link></li>
-          <li className='nav' onClick={setActive}><Link to='/projects'><AiOutlineMinus id='nav-icon' />Projects</Link></li>
-          <li className='nav' onClick={setActive}><Link to='/photography'><AiOutlineMinus id='nav-icon' />Photography</Link></li>
-          <li className='nav' onClick={setActive}><Link to='/contact'><AiOutlineMinus id='nav-icon' />Contact</Link></li>
+          <li className='nav'><Link to='/about' onClick={setActive}><AiOutlineMinus id='nav-icon' />About</Link></li>
+          <li className='nav'><Link to='/projects' onClick={setActive}><AiOutlineMinus id='nav-icon' />Projects</Link></li>
+          <li className='nav'><Link to='/photography' onClick={setActive}><AiOutlineMinus id='nav-icon' />Photography</Link></li>
+          <li className='nav'><Link to='/contact' onClick={setActive}><AiOutlineMinus id='nav-icon' />Contact</Link></li>
         </ul>
       </nav>
       <AnimatedRoutes />

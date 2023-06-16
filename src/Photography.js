@@ -38,13 +38,10 @@ function Photography() {
                 <img src='./ig-pics/RPM05776.jpg' id='RPM05776.jpg' alt='pic' className='photo' onClick={showActive}></img>
                 <img src='./ig-pics/RPM00886.jpg' id='RPM00886.jpg' alt='pic' className='photo' onClick={showActive}></img>
                 <img src='./ig-pics/RPM02441.jpg' id='RPM02441.jpg' alt='pic' className='photo' onClick={showActive}></img>
-
-
             </div>
-            <div className='gradient' ></div>
             <div className='active-box' id='active-box'>
                 <button onClick={() => document.getElementById('active-box').style.display = 'none'}>X</button>
-                <img src={active}></img>
+                <img src={active} alt='Cannot display photo at this time'></img>
             </div>
 
         </motion.div>

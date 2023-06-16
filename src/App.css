@@ -131,7 +131,7 @@ nav {
   transition: all .15s;
 }
 
-nav ul li:hover #nav-icon {
+nav ul li a:hover #nav-icon {
   font-stretch: 2rem;
   width: 3rem;
 
@@ -142,6 +142,8 @@ li.nav {
   position: relative;
   font-size: 1.2rem;
   transition: all .25s;
+  padding: 0;
+  margin: .5rem;
 }
 
 li.nav:link {
@@ -266,9 +268,11 @@ a.project-title:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: .25rem;
+  align-items: start;
+  padding: 1vh;
   left: 22%;
-  bottom: 4.7%;
+  z-index: 10;
+  bottom: 8.5%;
   height: 55vh;
   width: 77.5%;
   overflow-x: scroll;
@@ -306,29 +310,19 @@ a.project-title:hover {
   z-index: 11;
 }
 
-.gradient {
-  position: fixed;
-  height: 50vh;
-  left: 91.75%;
-  bottom: 8.5%;
-  width: 6%;
-  z-index: 13;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0))
-}
-
 .active-box {
   display: none;
   position: fixed;
   justify-content: center;
   align-items: center;
-  z-index: 20;
+  z-index: 30;
   top: 5%;
   left: 15%;
   width: 70%;
   height: 90vh;
   background-color: #000000ce;
   border: 2pt solid rgb(60, 60, 60);
-  border-radius: 5%;
+  border-radius: 1%;
 }
 
 .active-box img {
@@ -361,23 +355,25 @@ a.project-title:hover {
   list-style-type: none;
 }
 
-.contact-list li {
+.contact-list a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin: 2rem;
   font-size: 3rem;
   border-radius: 5pt;
+  height: 7vh;
+  width: 85%;
   background-color: #EEEEEE;
   color: black;
   cursor: pointer;
   background: linear-gradient(to left, white 50%, #4ECCA3 50%) right;
   background-size: 200%;
-  transition: all .35s ease-out;
+  transition: all .25s ease-out;
 }
 
-.contact-list li:hover {
+.contact-list a:hover {
   color: white;
   background-position: left;
 }

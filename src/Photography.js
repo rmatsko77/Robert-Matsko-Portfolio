@@ -41,7 +41,7 @@ function Photography() {
             </div>
             <div className='active-box' id='active-box'>
                 <button onClick={() => document.getElementById('active-box').style.display = 'none'}>X</button>
-                <img src={active} alt='Cannot display photo at this time'></img>
+                <img src={active} alt='Cannot display at this time'></img>
             </div>
 
         </motion.div>

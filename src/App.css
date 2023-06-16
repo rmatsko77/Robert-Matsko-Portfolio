@@ -231,7 +231,7 @@ a.project-title:hover {
   visibility: hidden;
   transition: all .35s;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .project-description {
@@ -268,7 +268,7 @@ a.project-title:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   padding: 1vh;
   left: 22%;
   z-index: 10;
@@ -281,7 +281,7 @@ a.project-title:hover {
 
 .row {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   width: 40%;
   margin: -2.5rem .5rem;
   padding: 1rem;

@@ -22,9 +22,9 @@ function App() {
       <h2 className='title'><BsPersonCircle className='title-icon' />Front-End Developer / Designer / Photographer</h2>
       <h3 className='location'><MdLocationPin className='location-icon' />Brooklyn, New York</h3>
       <div className='socials'>
-        <a href='https://github.com/rmatsko77' target='_blank'><BsGithub /></a>
-        <a href='https://www.instagram.com/r.p.matsko/' target='_blank'><BsInstagram /></a>
-        <a href='https://www.linkedin.com/in/robert-matsko-crcst-cis-905469198/' target='_blank'><BsLinkedin /></a>
+        <a href='https://github.com/rmatsko77' target='_blank' rel="noreferrer"><BsGithub /></a>
+        <a href='https://www.instagram.com/r.p.matsko/' target='_blank' rel="noreferrer"><BsInstagram /></a>
+        <a href='https://www.linkedin.com/in/robert-matsko-crcst-cis-905469198/' target='_blank' rel="noreferrer"><BsLinkedin /></a>
       </div>
       <nav>
         <ul className='tabs' id='tabs'>

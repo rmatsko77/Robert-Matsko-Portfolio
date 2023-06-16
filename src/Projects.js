@@ -1,8 +1,12 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 function Projects() {
   return (
-    <div className='projects'>
+    <motion.div className='projects'
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}>
       <ul className='projects-list'>
         <li className='project' id='redlite'>
           <a className='project-title' href='https://redlite.netlify.app/' target='_blank'>RedLite</a>
@@ -28,7 +32,7 @@ function Projects() {
         <li className='project' id='quick-keys'>
           <a className='project-title' href='https://quickkeys.netlify.app/' target='_blank'>QuickKeys</a>
           <div className='project-bottom'>
-            <p className='project-description'>Keyboard that can be implimented in other apps, built in React</p>
+            <p className='project-description'>Keyboard that can be implimented in other apps</p>
             <a href='https://github.com/rmatsko77/virtual-keyboard' target='_blank' className='repo-link'>Repo</a>
           </div>
         </li>
@@ -40,7 +44,7 @@ function Projects() {
           </div>
         </li>
       </ul>
-    </div>
+    </motion.div>
   )
 }
 

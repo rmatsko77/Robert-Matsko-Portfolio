@@ -31,8 +31,13 @@ a:visited {
   color: inherit;
 }
 
+a:active {
+  color: inherit;
+}
+
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .container {

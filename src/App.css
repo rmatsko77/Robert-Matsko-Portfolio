@@ -5,47 +5,23 @@ html {
 }
 
 .page-container {
+  position: relative;
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
-  height: 90vh;
-}
-
-#video-container {
-  top: 0%;
-  left: 0%;
-  height: 100vh;
+  height: 98vh;
   width: 100%;
   overflow: hidden;
-  position: absolute;
-}
-
-video {
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  height: 100vh;
-  opacity: 39%;
-}
-
-a:visited {
-  color: inherit;
-}
-
-a:active {
-  color: inherit;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .container {
-  position: relative;
+  position: absolute;
+  top: 4%;
+  left: 2.5%;
   background-color: #00000000;
-  height: 88vh;
-  padding: 2rem;
-  margin: 2vh;
+  height: 90vh;
+  width: 95%;
 }
 
 .container::before,
@@ -64,6 +40,37 @@ a {
 
 }
 
+#video-container {
+  top: 0%;
+  left: 0%;
+  margin: 0;
+  padding: 0;
+  height: 95vh;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+video {
+  position: absolute;
+  z-index: 0;
+  height: 120vh;
+  opacity: 39%;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container::after {
   right: 0;
   bottom: 0;
@@ -79,6 +86,7 @@ a {
   font-weight: 100;
   letter-spacing: .075rem;
   margin-bottom: 0;
+  padding: .5rem;
   z-index: 10;
 }
 
@@ -197,7 +205,10 @@ li.nav:visited {
   bottom: 5%;
   right: 5%;
   font-size: 1.1rem;
-  width: 35%;
+  font-weight: 100;
+  width: 50%;
+  color: white;
+
 }
 
 .projects {
@@ -246,7 +257,6 @@ a.project-title:visited {
 
 a.project-title:hover {
   color: #4ECCA3;
-  font-size: 4.1rem;
 }
 
 .project-bottom {
@@ -357,7 +367,7 @@ a.project-title:hover {
   position: fixed;
   justify-content: center;
   align-items: center;
-  z-index: 30;
+  z-index: 300;
   top: 5%;
   left: 15%;
   width: 70%;
@@ -368,6 +378,8 @@ a.project-title:hover {
 }
 
 .active-box img {
+  position: relative;
+  z-index: 400;
   max-width: 90%;
   max-height: 80vh;
 }
@@ -407,16 +419,16 @@ a.project-title:hover {
   border-radius: 5pt;
   height: 7vh;
   width: 85%;
-  background-color: #EEEEEE;
-  color: black;
+  color: #EEEEEE;
   cursor: pointer;
-  background: linear-gradient(to left, white 50%, #4ECCA3 50%) right;
-  background-size: 200%;
-  transition: all .25s ease-out;
+  background: transparent;
+  border: 2pt solid #EEEEEE;
+  transition: all .5s;
 }
 
 .contact-list a:hover {
-  color: white;
+  color: #4ECCA3;
+  border: 2pt solid #4ECCA3;
   background-position: left;
 }
 
@@ -455,8 +467,8 @@ a.project-title:hover {
   font-weight: 400;
 }
 
-@keyframes fadeIn{
-  to{
+@keyframes fadeIn {
+  to {
     opacity: 1;
   }
 }
@@ -484,4 +496,234 @@ a.project-title:hover {
   z-index: -10;
   opacity: 0;
   transition: all .5s linear;
+}
+
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+  .name {
+    font-size: 3rem;
+    padding-top: 2rem;
+  }
+
+  .title {
+    font-size: 1rem;
+    margin: 0;
+    left: 4%;
+  }
+
+  .location {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .title-icon {
+    height: .75rem;
+    margin-right: .2rem;
+  }
+
+  .location-icon {
+    height: 1rem;
+    padding-left: .1rem;
+  }
+
+  nav {
+    top: 25%;
+    left: -10%;
+  }
+
+  .tabs .nav {
+    font-size: 1.5rem;
+  }
+
+  .projects {
+    bottom: 15%;
+    left: 40%;
+    width: 100%;
+  }
+
+  .project {
+    margin: 1rem;
+  }
+
+  a.project-title {
+    font-size: 2rem;
+  }
+
+  .project-bottom {
+    flex-direction: column;
+  }
+
+  .project-description {
+    font-size: .75rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .repo-link {
+    font-size: .75rem;
+  }
+
+  .photography-container {
+    height: 42vh;
+    width: 90%;
+    left: 36%;
+    bottom: 10%;
+  }
+
+  .photography {
+    right: 35%;
+    z-index: 10;
+    top: 45%;
+    height: 42vh;
+    width: 100%;
+  }
+
+  .gradient {
+    top: 45%;
+    right: 34%;
+    height: 42vh;
+    width: 20%;
+    z-index: 11;
+  }
+
+  .contact-list {
+    left: 37%;
+    bottom: 10%;
+    width: 45%;
+  }
+
+  .contact-list a {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 519px) {
+  .name {
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+
+  .title {
+    font-size: .65rem;
+    margin: 0;
+    left: 5.9%;
+  }
+
+  .location {
+    font-size: .65rem;
+    margin: 0;
+  }
+
+  .title-icon {
+    height: .55rem;
+    margin-right: .2rem;
+  }
+
+  .location-icon {
+    height: .75rem;
+    padding-left: .1rem;
+  }
+
+  .socials {
+    left: 92%;
+    bottom: 24%;
+    z-index: 11;
+  }
+
+  .socials a {
+    font-size: .8rem;
+  }
+
+  nav {
+    top: 110px;
+    left: -45px;
+  }
+
+  .tabs .nav {
+    font-size: .8rem;
+    margin: .5rem;
+  }
+
+  .about {
+    font-size: .75rem;
+  }
+
+  .projects {
+    top: 40px;
+    left: 40px;
+    width: 100%;
+  }
+
+  .project {
+    margin: 1rem;
+    height: 2rem;
+  }
+
+  .project:hover {
+    height: 3rem;
+  }
+
+  a.project-title {
+    font-size: .9rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-bottom {
+    flex-direction: column;
+  }
+
+  .project-description {
+    font-size: .35rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .repo-link {
+    font-size: .35rem;
+  }
+
+  .photography-container {
+    height: 42vh;
+    width: 90%;
+    left: 36%;
+    bottom: 10%;
+  }
+
+  .photography {
+    right: 35%;
+    z-index: 10;
+    top: 55%;
+    height: 35vh;
+    width: 100%;
+  }
+
+  .photo {
+    position: relative;
+    max-width: 8rem;
+    max-height: 8rem;
+    margin: .8rem .2rem;
+    transition: all .25s;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .gradient {
+    top: 55%;
+    right: 34%;
+    height: 35vh;
+    width: 20%;
+    z-index: 11;
+  }
+
+  .contact-list {
+    left: 12%;
+    bottom: 3%;
+    width: 45%;
+
+  }
+
+  .contact-list a {
+    font-size: 1.1rem;
+    height: 2rem;
+  }
 }

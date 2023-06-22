@@ -36,14 +36,12 @@ function App() {
           <a href='https://www.instagram.com/r.p.matsko/' target='_blank' rel="noreferrer"><BsInstagram /></a>
           <a href='https://www.linkedin.com/in/robert-matsko-crcst-cis-905469198/' target='_blank' rel="noreferrer"><BsLinkedin /></a>
         </div>
-        <nav>
-          <ul className='tabs' id='tabs'>
-            <li className='nav'><Link to='/about' onClick={setActive}><AiOutlineMinus id='nav-icon' />About</Link></li>
-            <li className='nav'><Link to='/projects' onClick={setActive}><AiOutlineMinus id='nav-icon' />Projects</Link></li>
-            <li className='nav'><Link to='/photography' onClick={setActive}><AiOutlineMinus id='nav-icon' />Photography</Link></li>
-            <li className='nav'><Link to='/contact' onClick={setActive}><AiOutlineMinus id='nav-icon' />Contact</Link></li>
-          </ul>
-        </nav>
+        <ul className='tabs' id='tabs'>
+          <li className='nav'><Link to='/about' onClick={setActive}><AiOutlineMinus id='nav-icon' />About</Link></li>
+          <li className='nav'><Link to='/projects' onClick={setActive}><AiOutlineMinus id='nav-icon' />Projects</Link></li>
+          <li className='nav'><Link to='/photography' onClick={setActive}><AiOutlineMinus id='nav-icon' />Photography</Link></li>
+          <li className='nav'><Link to='/contact' onClick={setActive}><AiOutlineMinus id='nav-icon' />Contact</Link></li>
+        </ul>
         <AnimatedRoutes />
       </div>
     </div>

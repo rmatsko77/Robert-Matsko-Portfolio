@@ -8,7 +8,6 @@ function Welcome() {
         welcomePage[0].classList.add('display-none');
     }, 3200)
 
-
     return (
         <div className='welcome-page'>
             <div className='welcome-text'>

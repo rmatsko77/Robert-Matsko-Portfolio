@@ -23,8 +23,8 @@ function App() {
       <Welcome />
       <div id='video-container'>
         <video autoPlay loop muted>
-          <source src='background-video.webm' type='video/webm'></source>
           <source src='background-video.mp4' type='video/mp4'></source>
+          <source src='background-video.webm' type='video/webm'></source>
         </video>
       </div>
       <div className='container'>

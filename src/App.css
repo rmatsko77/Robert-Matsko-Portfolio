@@ -518,6 +518,101 @@ a.project-title:hover {
   transition: all .5s linear;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1125px) {
+  .name {
+    font-size: 4rem;
+    padding-top: 2rem;
+  }
+
+  .title {
+    font-size: 1rem;
+    margin: 0;
+    left: 4%;
+  }
+
+  .location {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .title-icon {
+    height: .75rem;
+    margin-right: .2rem;
+  }
+
+  .location-icon {
+    height: 1rem;
+    padding-left: .1rem;
+  }
+
+  .project {
+    margin: 1.5rem;
+  }
+
+  .projects {
+    bottom: 0;
+    right: 0;
+  }
+
+  a.project-title {
+    font-size: 2.8rem;
+  }
+  .tabs {
+    top: -3%;
+    left: -10%;
+  }
+
+  .tabs .nav {
+    font-size: 1.5rem;
+  }
+
+  .about {
+    font-size: .9rem;
+  }
+
+  .project-description {
+    font-size: .75rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .repo-link {
+    font-size: .75rem;
+  }
+
+  .photography-container {
+    width: 80%;
+  }
+
+  .photography {
+    height: 38vh;
+    width: 95%;
+  }
+
+  .gradient {
+    height: 38vh;
+  }
+
+  .photo {
+    max-width: 8rem;
+    max-height: 8rem;
+    margin: .8rem .1rem;
+  }
+
+  .contact {
+    left: 40%;
+    bottom: 25%;
+    width: 35%;
+
+  }
+
+  .contact a {
+    font-size: 1.5rem;
+    height: 3rem;
+    margin: 1rem;
+  }
+}
+
 @media only screen and (min-width: 520px) and (max-width: 767px) {
   .name {
     font-size: 3rem;

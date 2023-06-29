@@ -10,8 +10,8 @@ html {
   left: 0;
   margin: 0;
   padding: 0;
-  height: 95vh;
-  width: 95vw;
+  height: 100vh;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -45,7 +45,7 @@ html {
   left: 0%;
   margin: 0;
   padding: 0;
-  height: 95vh;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   position: absolute;
@@ -57,7 +57,7 @@ video {
   left: 0;
   margin: 0;
   padding: 0;
-  height: 98vh;
+  height: 100vh;
   z-index: 0;
   opacity: 39%;
 }

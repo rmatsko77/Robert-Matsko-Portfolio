@@ -34,7 +34,7 @@ function App() {
         <div className='socials'>
           <a href='https://github.com/rmatsko77' target='_blank' rel="noreferrer"><BsGithub /></a>
           <a href='https://www.instagram.com/r.p.matsko/' target='_blank' rel="noreferrer"><BsInstagram /></a>
-          <a href='https://www.linkedin.com/in/robert-matsko-crcst-cis-905469198/' target='_blank' rel="noreferrer"><BsLinkedin /></a>
+          <a href='https://www.linkedin.com/in/robert-matsko-905469198/' target='_blank' rel="noreferrer"><BsLinkedin /></a>
         </div>
         <ul className='tabs' id='tabs'>
           <li className='nav'><Link to='/about' onClick={setActive}><AiOutlineMinus id='nav-icon' />About</Link></li>

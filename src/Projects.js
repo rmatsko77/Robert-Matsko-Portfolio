@@ -17,6 +17,15 @@ function Projects() {
             <a href='https://github.com/rmatsko77/RedLite' target='_blank' className='repo-link' rel="noreferrer">Repo</a>
           </div>
         </li>
+        <li className='project' id='x-tract'>
+          <div className='project-top'>
+            <a className='project-title' href='https://x-tract.netlify.app/' target='_blank' rel="noreferrer">x-tract</a>
+          </div>
+          <div className='project-bottom'>
+            <p className='project-description'>100% SEO optimized landing page</p>
+            <a href='https://github.com/rmatsko77/x-tract' target='_blank' rel="noreferrer" className='repo-link'>Repo</a>
+          </div>
+        </li>
         <li className='project' id='whats-the-plan'>
           <div className='project-top'>
             <a className='project-title' href='https://whats-the-plan.netlify.app/' target='_blank' rel="noreferrer">What's the Plan?</a>
